@@ -1,0 +1,40 @@
+// FOLHAS DE ESTILO
+
+1. PARA TODAS AS TAGS:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Aula 1 - CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      h1{
+        color: blue;
+      }
+    </style>
+  </head>
+// TODAS AS TAGS <h1> serão da cor Azul
+
+2. ATRIBUTO PARA 1 TAG:
+
+<section>
+      <h2 style="color: red">Notícias Tech</h2>
+      <h3>IAs</h3>
+      <p>Texto qualquer <b>em negrito</b></p>
+
+      <h3>Novidades JS</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+    </section>
+// SOMENTE A PALAVRA "NOTÍCIAS TECH" SERÁ VERMELHA
+
+3. UTILIZANDO UM ARQUIVO EXTERNO:
+
+//Criar um Arquivo.css dentro da Pasta Assets (onde está o Arquivo index.html) 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Aula 1 - CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"> //O NOME DO ARQUIVO É styles.css . TODAS AS ALTERAÇÕES FEITAS NESTE ARQUIVO IRÃO INTERFERIR NO index.html (pagina web)
