@@ -1,0 +1,81 @@
+1. DE ELEMENTO: vai diretamente no elemento
+
+//EXEMPLO 1: tag <h1>
+<heading>
+      <h1><u>Blog da Bia</u></h1> //FICARÁ VERMELHO
+
+//NO ARQUIVO: styles.css , USAMOS:
+
+h1{
+  color: red;
+}
+//O TAG <h1> VAI TER O TEXTO NA COR VERMELHA
+
+//EXEMPLO 2: div <section>
+<section>
+      <h2>Notícias vida da Bia</h2>
+      <p>Aqui você encontra <strong>últimas notícias</strong> da vida da Bia</p>
+<h3>Casamento da Bia</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </section>
+
+//NO ARQUIVO: styles.css, USAMOS:
+
+<section> {
+           background-color: red;
+} 
+// <section> É UMA DIV, ENTÃO A COR DE FUNDO (background-color) FICARÁ VERMELHA
+
+2. DE CLASSE: (.)
+
+<section>
+      <h2>Notícias Tech</h2>
+      <h3>IAs</h3>
+      <p class="textoAzul"> Estudo muito <b>em negrito</b></p>
+
+      <h3>Novidades JS</h3>
+      <p class="textoAzul">Lorem Ipsum is simply dummy text. </p>
+    </section>
+
+// style.css: .textoAzul {
+                          color: blue;
+                         }
+// O TEXTO "Estudo muito" E O TEXTO "Lorem Ipsum is simply dummy text."  FICARÃO AZUL
+
+//////////OBSERVAÇÃO IMPORTANTE: PODEMOS USAR DOIS STYLES NO SELETOR DO TIPO CLASSE:
+
+<section>
+      <h2>Notícias Tech</h2>
+      <h3>IAs</h3>
+      <p class="textoAzul textoBold"> Guadallupi <b>em negrito</b></p>
+
+      <h3>Novidades JS</h3>
+      <p class="textoAzul textoBold"> Olá! </p>
+    </section>
+
+// style.css: .textoAzul {
+                         color: blue;
+                        }
+
+              .textoBold {
+                         front-weight: bold
+                         }
+// OS TEXTOS "Guadallupi" E "Olá!" FICARÃO AZUIS E EM NEGRITO
+
+
+3. DE ID: (#)
+
+<heading>
+      <h1><u>Blog da Guada</u></h1>
+      <p id="textoRosa"> Oi! Eu sou a Guada. </p>
+    </heading>
+
+// style.css: #textoRosa {
+                         color: pink
+                         }
+
+// OS TEXTOS "Blog da Guada" E "Oi! Eu sou a Guada." FICARÃO ROSAS. 
+
+
+
+
